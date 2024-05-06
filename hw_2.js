@@ -1,5 +1,5 @@
 function formatMessage(message, maxLenght) {
-  if (parseFloat(message.lenght) >= parseFloat(maxLenght)) {
+  if (message.length <= maxLenght) {
     return `${message}`;
   } else return `${message.slice(0, parseFloat(maxLenght))}...`;
 }
