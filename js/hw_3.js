@@ -4,7 +4,9 @@ function checkForSpam(message) {
     return true;
   } else if (lowMessage.includes("spam")) {
     return true;
-  } else return false;
+  } else {
+    return false;
+  }
 }
 console.log(checkForSpam("Latest technology news")); // false
 console.log(checkForSpam("JavaScript weekly newsletter")); // false
